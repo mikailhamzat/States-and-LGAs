@@ -53,11 +53,7 @@ $states = State::all();
 
 // Get LGAs for a specific state
 $state = State::where('name', 'Lagos')->first();
-$lgas = $state->lgas;
-
-// Get state for a specific LGA
-$lga = LGA::where('name', 'Ikeja')->first();
-$state = $lga->state;
+$lgas = $state->local_government_areas;
 ```
 
 ## Contributing
