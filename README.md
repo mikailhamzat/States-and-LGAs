@@ -1,4 +1,4 @@
-# States-and-LGAs
+# States and LGAs
 
 ## States and LGAs Seeder for Laravel
 This Laravel seeder provides a convenient way to populate your database with Nigerian states and their corresponding Local Government Areas (LGAs).
@@ -18,13 +18,9 @@ Laravel >= 5.5
    php artisan make:model -ms LocalGovernmentArea
    ```
 
-2. Copy the code for both State and LGA files from the app/models directory of this repository to the corresponding files in your Laravel project's app/models directory.
+2. Copy the code for both State and LGA files from the app/models, database/migrations, and database/seeders directories of this repository to the corresponding files in your Laravel project's app/models, database/migrations, and database/seeders directories, respectively.
 
-3. Copy the code for both State and LGA files from the database/migrations directory of this repository to the corresponding files in your Laravel project's database/migrations directory.
-   
-4. Copy the code for both State and LGA files from the database/seeders directory of this repository to the corresponding files in your Laravel project's database/seeders directory.
-
-5. Finally, register the StateSeeder and LocalGovernmentAreaSeeder class in the DatabaseSeeder.php file:
+3. Finally, register the StateSeeder and LocalGovernmentAreaSeeder class in the DatabaseSeeder.php file:
 ```
     public function run(): void
     {
@@ -33,7 +29,7 @@ Laravel >= 5.5
         $this->call(LocalGovernmentAreaSeeder::class);
     }
 ```
-7. Run the database migration and seeder:
+4. Run the database migration and seeder:
    ```
    php artisan migrate --seed
    ```
