@@ -4,9 +4,9 @@
 This Laravel seeder provides a convenient way to populate your database with Nigerian states and their corresponding Local Government Areas (LGAs).
 
 ## Features
-Seeds Nigerian states along with their LGAs.
-Provides a structured and easy-to-use database schema for Nigerian states and LGAs.
-Saves time and effort in manually inputting state and LGA data.
+- Seeds Nigerian states along with their LGAs.
+- Provides a structured and easy-to-use database schema for Nigerian states and LGAs.
+- Saves time and effort in manually inputting state and LGA data.
 
 ## Requirements
 Laravel >= 5.5
